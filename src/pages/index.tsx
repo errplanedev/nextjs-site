@@ -11,7 +11,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData }: any) {
   return (
     <>
       <Head>
@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
       <div id="posts">
         <h1>errplane's blog</h1>
         <br />
-        {allPostsData.map(({ id, date, title }) => (
+        {allPostsData.map(({ id, date, title }: any) => (
           <div key={id}>
             <Link href={`/posts/${id}`}><h2>{title}</h2></Link>
             <div className="date">{date}</div>

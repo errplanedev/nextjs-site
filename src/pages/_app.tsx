@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
     const pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
     let current = 0;
 
-    const keyHandler = (e) => {
+    const keyHandler = (e: any) => {
 
 	    // If the key isn't in the pattern, or isn't the current key in the pattern, reset
 	    if (pattern.indexOf(e.key) < 0 || e.key !== pattern[current]) {

@@ -2,7 +2,7 @@ import { getAllPostIds, getPostData } from '../../../lib/posts';
 import Link from 'next/link';
 import Head from 'next/head';
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
   const postData = await getPostData(params.id);
 
   return {
@@ -20,7 +20,7 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Post({ postData }) {
+export default function Post({ postData }: any) {
   return (
     <>
       <Head>
