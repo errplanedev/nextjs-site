@@ -2,7 +2,6 @@
 nextjs rewrite of my website.
 
 # running
-and then run it:
 ```bash
 npm run dev # or yarn, pnpm, etc.
 ```
