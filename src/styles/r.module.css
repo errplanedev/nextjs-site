@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.img {
+  background-image: url('https://media.giphy.com/media/Ju7l5y9osyymQ/giphy.gif');
+  height: 20rem;
+  width: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.25em;
+}
