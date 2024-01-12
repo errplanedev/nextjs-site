@@ -32,7 +32,7 @@ export default function Post({ postData }: any) {
       <br />
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       <br />
-      <Link href="/">← Back to home</Link>
+      <Link href="/">← back to home</Link>
     </>
   )
 }
