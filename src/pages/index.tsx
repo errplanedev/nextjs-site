@@ -25,7 +25,7 @@ export default function Home({ allPostsData }: any) {
         <br />
         {allPostsData.map(({ id, date, title }: any) => (
           <div key={id}>
-            <Link href={`/posts/${id}`}><h2>{title}</h2></Link>
+            <Link href={`/posts/${id}`} className="postTitle"><h2>{title}</h2></Link>
             <div className="date">{date}</div>
           </div>
         ))}

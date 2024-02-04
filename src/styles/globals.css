@@ -57,3 +57,7 @@ blockquote {
 .date {
   color: #c1c1c1;
 }
+
+.postTitle:hover::after {
+  transform: scaleX(0) !important;
+}
