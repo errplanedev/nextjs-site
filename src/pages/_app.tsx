@@ -33,6 +33,27 @@ export default function App({ Component, pageProps }: AppProps) {
 
     // Listen for keydown events
     document.addEventListener('keydown', keyHandler, false);
+
+    const trailer = document.getElementById('trailer');
+
+    window.onmousemove = e => {
+      // @ts-ignore
+      const x = e.clientX - trailer?.offsetWidth / 2,
+            y = e.clientY - trailer?.offsetHeight / 2;
+
+      const keyframes =  {
+        transform: `translate(${x}px, ${y}px)`
+      }
+
+      trailer?.animate(keyframes, {
+        duration: 800,
+        fill: 'forwards'
+      });
+    }
+
+    if(!!window.chrome) {
+      document.location = 'https://www.mozilla.org/en-US/firefox/new/';
+    }
   }
   return (
     <>

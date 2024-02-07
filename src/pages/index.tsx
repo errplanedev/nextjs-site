@@ -1,35 +1,16 @@
-import Head from 'next/head'
-import Link from 'next/link';
-import { getSortedPostsData } from '../../lib/posts'
+import Head from "next/head"
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
-export default function Home({ allPostsData }: any) {
-  return (
-    <>
-      <Head>
-        <title>errplane's blog</title>
-        <meta name="description" content="errplane's blog" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
-      <div id="posts">
-        <h1>errplane's blog</h1>
+export default function Home() {
+    return (
+      <>
+        <Head>
+          <title>errplane's site</title>
+        </Head>
+        <h1>hi, i'm <span className="highlight">errplane</span>.</h1>
         <br />
-        {allPostsData.map(({ id, date, title }: any) => (
-          <div key={id}>
-            <Link href={`/posts/${id}`} className="postTitle"><h2>{title}</h2></Link>
-            <div className="date">{date}</div>
-          </div>
-        ))}
-      </div>
-    </>
-  )
+        <h2>an <span className="highlight">elon musk hater</span>.</h2>
+        <br />
+        <h3 style={{ fontStyle: "italic" }}>there's currently not that much here, but you can <a href="/posts">check out my blog</a>.</h3>
+      </>
+    )
 }

@@ -2,6 +2,7 @@
   font-weight: inherit;
   margin: 0;
   padding: 0;
+  cursor: none !important;
 }
 
 :root {
@@ -10,6 +11,7 @@
 
 body {
   width: 580px;
+  height: 86vh;
   margin: 0 auto 0 auto;
   font-size: 1.2rem;
   background: #101010;
@@ -60,4 +62,29 @@ blockquote {
 
 .postTitle:hover::after {
   transform: scaleX(0) !important;
+}
+
+#trailer {
+  height: 40px;
+  width: 40px;
+  background: none;
+  border: solid 2px var(--accent);
+  border-radius: 50px;
+
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 69420;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+body:hover > #trailer {
+  opacity: 1;
+}
+
+.highlight {
+  color: var(--accent);
 }
