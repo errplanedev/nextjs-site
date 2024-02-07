@@ -7,6 +7,54 @@ export default function Document() {
       <body>
         <div id="trailer"></div>
         <Main />
+        <br />
+        <a className='badge' href="https://8bitosc.net/" target="_blank">
+          <img
+            src="https://8bitosc.net/88x31/8bitosc.png"
+            alt='A blue button with the text "8BitOSC (dot net)" on it.'
+            width="88"
+            height="31"
+            style={{ imageRendering: 'pixelated' }}
+            title="where the most mediocre stuff resides"
+          />
+        </a>
+        <a href="https://tauon.dev" className="badge" target='_blank'>
+          <img 
+            src="https://tauon.dev/images/88x31/lily.png"
+            alt="lily :3" 
+            width='88'
+            height='31'
+            style={{ imageRendering: 'pixelated' }}
+            title='a good programmer 👍'
+          />
+        </a>
+        <img
+          src='https://tauon.dev/images/88x31/anythingbutwindows.gif'
+          alt='STOP THE BLOATWARE'
+          width='88'
+          height='31'
+          style={{ imageRendering: 'pixelated' }}
+          title='FRICK BLOATWARE'
+        />
+        <img
+          src='https://tauon.dev/images/88x31/anythingbutchrome.gif'
+          alt='STOP THE BLOATWARE'
+          width='88'
+          height='31'
+          style={{ imageRendering: 'pixelated' }}
+          title='FRICK BLOATWARE'
+        />
+        <a href='https://www.mozilla.org/en-US/firefox/new/' className='badge'>
+          <img
+            src='https://tauon.dev/images/88x31/firefox.gif'
+            alt='best browser'
+            width='88'
+            height='31'
+            style={{ imageRendering: 'pixelated' }}
+            title='yes'
+          />
+        </a>
+  
         <NextScript />
       </body>
     </Html>

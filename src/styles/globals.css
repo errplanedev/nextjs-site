@@ -2,7 +2,6 @@
   font-weight: inherit;
   margin: 0;
   padding: 0;
-  cursor: none !important;
 }
 
 :root {
@@ -87,4 +86,8 @@ body:hover > #trailer {
 
 .highlight {
   color: var(--accent);
+}
+
+.badge:hover::after {
+  transform: scaleX(0) !important;
 }
