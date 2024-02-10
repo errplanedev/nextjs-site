@@ -39,6 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
     window.onmousemove = e => {
       // @ts-ignore
       const x = e.clientX - trailer?.offsetWidth / 2,
+            // @ts-ignore
             y = e.clientY - trailer?.offsetHeight / 2;
 
       const keyframes =  {
