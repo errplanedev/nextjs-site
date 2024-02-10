@@ -3,7 +3,9 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <script async src="https://umami.dour.com/script.js" data-website-id="eee90a09-6514-487c-95ce-61eb5711be54"></script>
+      </Head>
       <body>
         <div id="trailer"></div>
         <Main />
