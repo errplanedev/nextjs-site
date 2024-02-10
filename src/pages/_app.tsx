@@ -52,6 +52,7 @@ export default function App({ Component, pageProps }: AppProps) {
       });
     }
 
+    // @ts-ignore
     if(!!window.chrome) {
       document.location = 'https://www.mozilla.org/en-US/firefox/new/';
     }
