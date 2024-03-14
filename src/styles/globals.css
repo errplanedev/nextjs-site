@@ -63,27 +63,6 @@ blockquote {
   transform: scaleX(0) !important;
 }
 
-#trailer {
-  height: 40px;
-  width: 40px;
-  background: none;
-  border: solid 2px var(--accent);
-  border-radius: 50px;
-
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: 69420;
-
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 500ms ease;
-}
-
-body:hover > #trailer {
-  opacity: 1;
-}
-
 .highlight {
   color: var(--accent);
 }

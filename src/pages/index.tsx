@@ -7,11 +7,14 @@ export default function Home() {
           <title>errplane's site</title>
         </Head>
         <h1>hi, i'm <span className="highlight">errplane</span>.</h1>
+
+        <iframe frameBorder="0" width="510" height="140" src="https://yc.besties.house/embed/last/errplane?mini=false&force-theme=dark"></iframe>
         <br />
-        <h2>an <span className="highlight">elon musk hater</span>.</h2>
-        <h3 style={{ fontStyle: "italic" }}>there's currently not that much here, but you can <a href="/posts">check out my blog</a>.</h3>
+        <h3>hey! look at <a href="/posts">my blog</a>!</h3>
         <br />
-        <h3>this website uses umami for analytics (doesnt require cookies), if you want to see them go <a href="https://umami.dour.com/share/I6sQ8qyv8xpwMBJi/personal">here</a>.</h3>
+        <br />
+        <br />
+        <p>this website uses umami for analytics (doesnt require cookies), if you want to see them go <a href="https://umami.dour.com/share/I6sQ8qyv8xpwMBJi/personal">here</a>.</p>
       </>
     )
 }
