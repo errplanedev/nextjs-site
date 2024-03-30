@@ -9,7 +9,7 @@ export default function Document() {
       <body>
         <div id="trailer"></div>
         <div id="btc">
-          hey there! if you appreciate my work or just want to support me, you can donate to this address: bc1qqy26g8uy2268r3yn0jq00ly3eld2z98q8vj97q
+          hey there! if you appreciate my work or just want to support me, you can donate to this bitcoin address: bc1qqy26g8uy2268r3yn0jq00ly3eld2z98q8vj97q
         </div>
         <Main />
         <br />
