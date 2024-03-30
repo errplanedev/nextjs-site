@@ -70,3 +70,10 @@ blockquote {
 .badge:hover::after {
   transform: scaleX(0) !important;
 }
+
+#btc {
+  background-color: #a6e3a1;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  color: black;
+}
