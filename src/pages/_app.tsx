@@ -33,11 +33,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
     // Listen for keydown events
     document.addEventListener('keydown', keyHandler, false);
-
-    // @ts-ignore
-    if(!!window.chrome) {
-      document.location = 'https://www.mozilla.org/en-US/firefox/new/';
-    }
   }
   return (
     <>
